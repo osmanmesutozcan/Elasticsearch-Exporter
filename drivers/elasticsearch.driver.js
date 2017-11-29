@@ -307,6 +307,8 @@ class Elasticsearch extends Driver {
                                 newType = env.options.target.type;
                             }
                             metadata.mappings[newIndex][newType] = mappings[type];
+
+                            console.log('**************************', metadata.mappings);
                         }
                     }
                     subCallback();
